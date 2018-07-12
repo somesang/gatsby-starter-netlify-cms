@@ -8,6 +8,7 @@ export const ProductPageTemplate = ({
   image,
   title,
   heading,
+  subhead,
   description,
   intro,
   main,
@@ -42,6 +43,9 @@ export const ProductPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">
                     {heading}
                   </h3>
+                  <h4 className="has-text-weight-semibold is-size-3">
+                    {subhead}
+                  </h4>
                   <p>{description}</p>
                 </div>
               </div>
@@ -109,6 +113,7 @@ ProductPageTemplate.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   heading: PropTypes.string,
+  subhead: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
