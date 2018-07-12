@@ -142,6 +142,7 @@ const ProductPage = ({ data }) => {
       image={frontmatter.image}
       title={frontmatter.title}
       heading={frontmatter.heading}
+      subhead={frontmatter.subhead}
       description={frontmatter.description}
       intro={frontmatter.intro}
       main={frontmatter.main}
@@ -169,6 +170,7 @@ export const productPageQuery = graphql`
         title
         image
         heading
+        subhead
         description
         intro {
           blurbs {
@@ -180,6 +182,7 @@ export const productPageQuery = graphql`
         }
         main {
           heading
+          subhead
           description
           image1 {
             alt
@@ -201,6 +204,7 @@ export const productPageQuery = graphql`
         full_image
         pricing {
           heading
+          subhead
           description
           plans {
             description
